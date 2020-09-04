@@ -23,7 +23,9 @@ if (!process.env.DISABLE_XORIGIN) {
     next();
   });
 }
-
+app.get('/',function(req,res){
+  res.send('Hello Express')
+})
 // app.use('/public', express.static(process.cwd() + '/public'));
 //
 // app.route('/_api/package.json')

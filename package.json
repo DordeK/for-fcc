@@ -1,6 +1,7 @@
 {
 	"name": "fcc-learn-npm-package-json",
 	"author": "dorde",
+	"description":"web app",
 	"dependencies": {
 		"express": "^4.14.0"
 	},

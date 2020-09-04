@@ -1,6 +1,6 @@
-var bGround = require('fcc-express-bground');
 var express = require('express');
 var app = express();
+var bGround = require('fcc-express-bground');
 
 // --> 7)  Mount the Logger middleware here
 

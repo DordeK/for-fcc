@@ -3,9 +3,9 @@
  * the verification process may break
  * ***************************************************/
 
-'use strict';
-
-var fs = require('fs');
+// 'use strict';
+//
+// var fs = require('fs');
 var bGround = require('fcc-express-bground');
 var myApp = require('./myApp');
 var express = require('express');

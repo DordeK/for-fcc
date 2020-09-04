@@ -9,6 +9,7 @@ var app = express();
 
 
 /** 1) Meet the node console. */
+bGround.log("Hello world")
 console.log("Hello world")
 
 /** 2) A first working Express Server */

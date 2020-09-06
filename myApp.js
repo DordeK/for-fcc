@@ -4,7 +4,6 @@ var bGround = require('fcc-express-bground');
 require('dotenv').config();
 let bodyParser= require('body-parser')
 
-
 // --> 7)  Mount the Logger middleware here
 
 
@@ -85,6 +84,9 @@ app.get('/name',function(req, res) {
 
 /** 12) Get data form POST  */
 
+app.post('/name', function(req, res) {
+  res.json({name:req.body.first+ " " + req.body.last})
+});
 
 
 // This would be part of the basic setup of an Express app

@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var bGround = require('fcc-express-bground');
 require('dotenv').config();
+let bodyParser= require('body-parser')
 
 
 // --> 7)  Mount the Logger middleware here
@@ -16,6 +17,11 @@ app.use(function(req, res, next) {
   console.log(string);
   next();
 })
+
+/** 11) Get ready for POST Requests - the `body-parser` */
+// place it before all the routes !
+
+app.use(bodyParser.urlencoded({extended: false}))
 
 /** 1) Meet the node console. */
 bGround.log("Hello world")
@@ -75,8 +81,6 @@ app.get('/name',function(req, res) {
     res.json({name:req.query.first+" "+req.query.last})
 })
 
-/** 11) Get ready for POST Requests - the `body-parser` */
-// place it before all the routes !
 
 
 /** 12) Get data form POST  */
